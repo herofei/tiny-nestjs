@@ -1,0 +1,31 @@
+{
+  "extends": ["plugin:import/recommended", "plugin:import/typescript"],
+  "ignorePatterns": [
+    "node_modules",
+    "dist",
+    "test"
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    },
+    "import/internal-regex": "^@midwayjs/"
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": 1,
+    "node/no-unpublished-import": 0,
+    "import/namespace": 0,
+    "import/order": [
+      "error",
+      {
+        "groups": ["type", "builtin", "internal", "external", "parent", "sibling", "index", "object"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
+  }
+}

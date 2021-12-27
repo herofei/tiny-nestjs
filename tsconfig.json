@@ -1,0 +1,29 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": false,
+    "inlineSourceMap": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noEmit": true,
+    "declaration": false,
+    "stripInternal": true,
+    "skipLibCheck": false,
+    "pretty": true,
+    "allowJs": false,
+    "checkJs": false,
+    "typeRoots": ["./typings", "./node_modules/@types"],
+    "outDir": "dist"
+  },
+  "exclude": ["dist", "node_modules", "test"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}

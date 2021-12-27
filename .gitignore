@@ -1,0 +1,10 @@
+logs/
+npm-debug.log
+yarn-error.log
+node_modules/
+yarn.lock
+coverage/
+dist/
+.idea/
+run/
+.DS_Store
