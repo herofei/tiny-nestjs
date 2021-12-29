@@ -15,10 +15,9 @@
     "stripInternal": true,
     "skipLibCheck": false,
     "pretty": true,
-    "allowJs": false,
-    "checkJs": false,
-    "typeRoots": ["./typings", "./node_modules/@types"],
-    "outDir": "dist"
+    "typeRoots": ["./node_modules/@types"],
+    "outDir": "dist",
+    "types": ["reflect-metadata"]
   },
   "exclude": ["dist", "node_modules", "test"],
   "ts-node": {

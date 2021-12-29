@@ -4,7 +4,7 @@
   "description": "tiny-nestjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node example/index.ts"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/herofei/tiny-nestjs#readme",
   "dependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/reflect-metadata": "^0.1.0",
     "koa": "^2.13.4",
-    "koa-router": "^10.1.1"
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.1.1",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@types/node": "^16.11.11",
