@@ -16,7 +16,7 @@ export class Container {
     const module = new Module()
     for (const injectModItem of this.injectModList) {
       if (injectModItem.target === Module.prototype) { // 判断该属性是否注入了服务
-        if (Reflect.getOwnMetadata(INJECTABEL_SYMBOL, injectModItem.service.prototype)) { // 判断注入的服务是否有暴露出来
+        if (!Reflect.getOwnMetadata(INJECTABEL_SYMBOL, injectModItem.service)) { // 判断注入的服务是否有暴露出来
           throw new Error(`模块${Module.name}依赖的子服务${injectModItem.key}没有通过Injectable装饰器注册！`)
         } else {
           module[injectModItem.key] = this.get(injectModItem.service)
